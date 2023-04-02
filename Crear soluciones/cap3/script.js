@@ -10,17 +10,16 @@ const prec = (nombre, p)=>{
     }
 }
 
-for (let i = 0 ; i < 4; i++){
+for (let i = 0 ; i < 5; i++){
     alert(i)
     for (alumno in totalumnos){
         prec(totalumnos[alumno][0],alumno);
     } 
 }
 for( alumno in totalumnos){
-    window.document.write = (` O alumno ${totalumnos[alumno][0]} teve um total de ${totalumnos[alumno][1]} precencia marcada <br>
-    ---------------AUSENCIA ${30 - totalumnos[alumno][1]}`);
-    tot = 30 - totalumnos[alumnos][1];
-    if(tot < 18 ){
-        document.write('aluno Reprovado por falta de Presencia');
-    }
+    window.document.body.innerHTML += (` O alumno ${totalumnos[alumno][0]} teve um total de ${totalumnos[alumno][1]} precencia marca
+    ...........Total de Ausencia = ${30 - totalumnos[alumno][1]} <br>`)
+    if((30 - totalumnos[alumno][1]) > 18 ){
+        window.document.body.innerHTML += `alumno reprovado <br>`
+}
 }
