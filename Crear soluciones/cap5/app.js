@@ -43,6 +43,7 @@ class app {
 
 const gameMario = new app('16,000 descargas','5 estrellas no app','tamaño 1gb');
 const gameSonic = new app('10,000 descarga', '3 estrellas', 'tamanho 20mb')
+document.write(gameMario.info())
 
 gameMario.instala()
 gameMario.abrir()
