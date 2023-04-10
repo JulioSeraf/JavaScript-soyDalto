@@ -1,10 +1,13 @@
-const conterTodo = window.document.querySelector(".flex-container")
+const conterTodo = window.document.querySelector(".flex-container");
 const crearLlave = (nombre,modelo,precio) =>{
     img = "<img src='llave.png' class='llave-img'>",
     nombre = `<h2>${nombre}<h2>`;
     modelo = `<h3>${modelo}</h3>`;
     precio = `<p>Precio: <strong>${precio}</strong></p>`;
     return [img,nombre,modelo,precio];
+}
+const changeHidden = (number)=>{
+    document.querySelector('.key-data').value = number
 }
 let documentFragment = document.createDocumentFragment();
 

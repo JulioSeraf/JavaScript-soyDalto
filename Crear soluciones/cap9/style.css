@@ -28,3 +28,16 @@
 strong{
     color: green;
 }
+form{
+    width: 100%;
+    text-align: center;
+}
+input[type="submit"]{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    
+}
