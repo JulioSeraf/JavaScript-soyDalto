@@ -14,7 +14,16 @@ class ordemadores{
     }
 }
 function comprar(){
-    let res = window.prompt('Selecione el Pc a Comprar: Mypc [1], Php [2], Sansumg[3], Mac[4]')
+    let res = window.prompt('Selecione el Pc a Comprar: Mac [1], Sansumg [2], Php[3], MyPc[4]')
+    res --;
+    let confirme = window.confirm(`Seguro q queres comprar ${modelos[res].modelo}`)
+    if (confirme == true){
+        document.write(`Ordenador ${modelos[res].modelo} Comprado com Exito!`)
+    }else[
+        document.write('Compra cancelada')
+    ]
+    
+
 }
 
 let alto = window.screen.availHeight;

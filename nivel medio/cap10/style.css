@@ -1,0 +1,9 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(to top, white, blue );
+    color: white;
+}
+
+p:hover{
+    background-color: red;
+}
