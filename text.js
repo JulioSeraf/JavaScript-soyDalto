@@ -1,17 +1,15 @@
-let contenedor = window.document.querySelector('.contenedor')
-let child = window.document.getElementsByClassName('child')
-child.addEventListener('click', mouse)
+let array1 = [];
+let child = window.document.querySelector('.child')
+let contenedor = document.getElementById('contenedor')
+function add(){
+ let num = window.document.getElementById('inum');
+let valor = num.value;
+    array1.push(valor)
+    array1.toString()
+    
+child.textContent =  array1
 
-function mouse(){
-    
-    switch(parseInt(valor)){
-        case 1:
-            console.log('clicou')
-        break
-        case 2:
-            console.log('moveo')
-            break
-            default:1
-     }
-    
+}
+function borrar(){
+    array1.pop() = array1;
 }
