@@ -1,0 +1,45 @@
+@charset "UTF-8"; 
+body{
+    background-color: black;
+}
+form{
+    margin: auto;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 50px;
+    font-weight: bolder;
+    width: clamp(330px, 50%, 700px);
+    color: white;
+    background-color:rgba(0, 87, 128, 0.445);
+    box-shadow: 10px 10px 50px rgba(0, 0, 255, 0.26);
+
+    
+}
+input{
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.918);
+    border: none;
+}
+input:hover{
+    background-color: gray;
+}
+input:hover::placeholder{
+    color: white;
+}
+
+input[type="submit"]{
+    margin: 40px;
+    width: 50%;
+   
+}
+input[type="submit"]:hover{
+    background-color: rgba(0, 60, 255, 0.979);
+    color: rgb(255, 255, 255);
+    
+   
+}
+
+label{
+    display: block;
+}
