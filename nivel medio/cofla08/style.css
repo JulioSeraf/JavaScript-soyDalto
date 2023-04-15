@@ -43,3 +43,9 @@ input[type="submit"]:hover{
 label{
     display: block;
 }
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
