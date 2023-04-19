@@ -1,7 +1,9 @@
-function add(){
-setInterval(()=>{
-    let tep = 1;
-    tep++
-    document.write(tep)
-}, 2000);
+try{
+     throw
+}
+catch(e){
+    console.log(e)
+}
+finally{
+
 }
