@@ -1,23 +1,8 @@
-class Persona {
-    constructor(nombre, instagram){
-        this.nombre = nombre;
-        this.instagram = instagram;
-    }
+function testarray( array){
+    for(i in array){
+        console.log(array[i] * 2);
+    };
 };
+let array = [2,3,4,5,5];
 
- const datos = [
-    ['jlio','@serfim'],
-    ['carlos','@carlinho'],
-    ['maria','@mariii'],
-    ['jose ','@joselin'],
-    ['ojuara','@desafiador'],
- ]
- let personas = [];
-for(persona in datos) {
-    personas[persona] = new Persona(datos[persona][0],datos[persona][1])
-}
-
-const obterPersona = (id,cb) => {
-    
-
-}
+testarray(array);
