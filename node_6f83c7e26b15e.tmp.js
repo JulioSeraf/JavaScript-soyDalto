@@ -4,6 +4,9 @@ class persona {
         this.instagram = instagram;
     }
 }
+
+let datos = new persona('julio serafim', '@serafim');
+
 const datosPersonas = [
     ['julio','@serafim'],
     ['antonio','@antonis'],
