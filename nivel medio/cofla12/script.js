@@ -30,11 +30,16 @@ function obtenerMateria(id){
         }else{
         setTimeout(()=>{ 
                 res(materia);
-        },Math.random()*400)
+        },2000)
     }  
     })
 }
-
-const mostrarMateria = async ()=>{
-    let res = await 
-}
+ 
+ async function mostra(){
+    for(let i in materias){
+       let res = await obtenerMateria(i)
+       nombre.innerHTML = res.nombre
+       nota.innerHTML = res.nota
+    }
+ }
+ mostra();
