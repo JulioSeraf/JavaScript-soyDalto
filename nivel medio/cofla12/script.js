@@ -1,7 +1,5 @@
 
 const materiaHtml = document.querySelector('.materias');
-const nombre = document.querySelector('.nombre');
-const nota = document.querySelector('.nota');
 
 const materias = [
     {
@@ -38,8 +36,13 @@ function obtenerMateria(id){
  async function mostra(){
     for(let i in materias){
        let res = await obtenerMateria(i)
-       nombre.innerHTML = res.nombre
-       nota.innerHTML = res.nota
-    }
+       let newHtmlCode = `
+       <div class="materia">
+           <div class="nombre">${res.nombre}</div>
+           <div class="nota">${res.nota}</div>
+       </div>`;
+    materiaHtml.innerHTML += newHtmlCode;
  }
+    }
+  
  mostra();
